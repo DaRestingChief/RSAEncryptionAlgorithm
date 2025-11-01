@@ -1,10 +1,10 @@
-# 🔐 RSA Encryption & Decryption (From Scratch)
+#  RSA Encryption & Decryption (From Scratch)
 
 This project demonstrates a **complete implementation of the RSA Cryptosystem** using pure Python — without relying on cryptography libraries. The goal is to clearly show how public and private keys are generated and how real text is encrypted and decrypted using modular arithmetic.
 
 ---
 
-## 🚀 What This Project Shows
+##  What This Project Shows
 
 - Generating **two large prime numbers**
 - Computing **n = p × q** and **φ(n)** (Euler’s Totient)
@@ -26,7 +26,7 @@ All of this is done in about **60 lines of readable Python**, making the cryptog
 
 ---
 
-## ✨ Why a Simple Implementation?
+##  Why a Simple Implementation?
 
 This implementation intentionally avoids:
 - Miller–Rabin primality testing  
@@ -39,7 +39,7 @@ This code is best suited for **learning, teaching, and demonstration purposes**,
 
 ---
 
-## 🧠 How to Run
+##  How to Run
 
 ```bash
 python main.py

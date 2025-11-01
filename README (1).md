@@ -1,45 +1,45 @@
-# RSA in different languages
----------------------
+# 🔐 RSA Encryption & Decryption (From Scratch)
 
-Implementing RSA from scratch in different languages.
+This project demonstrates a **complete implementation of the RSA Cryptosystem** using pure Python — without relying on cryptography libraries. The goal is to clearly show how public and private keys are generated and how real text is encrypted and decrypted using modular arithmetic.
 
-## Workflow
+---
 
- - Modular exponentiation
- - Euler's method for gcd
- - Extended Euler's Algorithm
- - Modular Multiplicative Inverse
- - Sieve of Eratosthenes
- - Euler Totient function
- - Legendre Symbol
- - Jacobi Symbol
- - Primality test
-   - Fermat's Primality Test
-   - Lucas Primality Test
-   - Solovay-Strassen Primality Test
-   - Miller Rabin Primality Test
- - RSA
-   - Prime number generation/selection
-   - Key generation
-   - Encryption
-   - Decryption
-   - Signing
-   - Verification
+## 🚀 What This Project Shows
 
-## Extras
- - Integer Factorization
-   - Pollard's Rho method
-   - Pollard's p-1 method
+- Generating **two large prime numbers**
+- Computing **n = p × q** and **φ(n)** (Euler’s Totient)
+- Selecting **public key (e)** such that `gcd(e, φ(n)) = 1`
+- Computing **private key (d)** using modular inverse
+- Encrypting a message using:
 
-# Languages 
-- [x] Python
-- [ ] Erlang
-- [ ] Rust
-- [ ] C/C++
-- [ ] JavaScript
+  \[
+  c = m^e \mod n
+  \]
 
-# Contributing
+- Decrypting using:
 
-If you would like to contribute, create a new folder with your favorite language
-and send a pull request!
+  \[
+  m = c^d \mod n
+  \]
 
+All of this is done in about **60 lines of readable Python**, making the cryptographic logic transparent and easy to follow.
+
+---
+
+## ✨ Why a Simple Implementation?
+
+This implementation intentionally avoids:
+- Miller–Rabin primality testing  
+- Extended Euclidean Algorithm  
+- High-level crypto libraries  
+
+**Reason:**  
+The aim here is *clarity over optimization*.  
+This code is best suited for **learning, teaching, and demonstration purposes**, where each step should be visible and understandable.
+
+---
+
+## 🧠 How to Run
+
+```bash
+python main.py
